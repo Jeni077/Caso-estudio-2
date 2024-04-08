@@ -17,8 +17,12 @@ public class MiddlewareController : MonoBehaviour
     {
 
         if (Input.GetMouseButtonDown(0))
+
         {
-            playerController2D.OnMeleeAttack();
+            if(playerController2D != null)
+            {
+                playerController2D.OnMeleeAttack();
+            }
         }
     }
 }
